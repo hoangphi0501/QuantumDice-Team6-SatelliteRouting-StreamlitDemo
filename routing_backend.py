@@ -1,16 +1,8 @@
-import sys
 import time
-from pathlib import Path
 
 import numpy as np
 
 from satellite_catalog import RE_KM, latlon_to_xyz_km
-
-
-APP_DIR = Path(__file__).resolve().parent
-PROJECT_DIR = APP_DIR.parent
-if str(PROJECT_DIR) not in sys.path:
-    sys.path.insert(0, str(PROJECT_DIR))
 
 
 from LibBeamforming import Func_BeamDP2SAT, Func_BeamSAT2DT, Func_BeamSAT2SAT

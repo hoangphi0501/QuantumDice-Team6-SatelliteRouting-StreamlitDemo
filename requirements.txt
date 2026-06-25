@@ -3,4 +3,4 @@ pandas
 numpy
 pydeck
 plotly
-torch
+torch --index-url https://download.pytorch.org/whl/cpu
