@@ -2,7 +2,7 @@
 
 This Streamlit app is a deploy-safe UI for the Team 6 Quantum Dice routing workflow.
 
-It does not modify any notebook. It imports the existing project libraries from the parent folder and runs the existing p-bit Gibbs solver with `device="cpu"`.
+It imports the existing project libraries from the parent folder and runs the existing p-bit Gibbs solver with `device="cpu"`.
 
 ## Features
 
@@ -26,7 +26,6 @@ streamlit run .\quantum-dice-gibbs-app\app.py
 
 ## Notes
 
-- GPU is not required.
 - The app uses PyTorch on CPU.
 - Brute Force and ORBIT are intentionally not used in this UI.
 - Default penalties are higher than some notebook examples to encourage feasible raw Gibbs outputs, but the final route is repaired regardless.
